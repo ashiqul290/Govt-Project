@@ -15,7 +15,7 @@ export default function HeaderRes() {
         <Container>
       <div className=" px-1 sm:px-4 relative py-5 flex justify-between items-center">
 
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-3">
 
           <img
             src={govtImg}
@@ -25,11 +25,11 @@ export default function HeaderRes() {
 
           <div>
 
-            <h1 className="md:text-3xl w-45 text-[16px]  font-bold">
+            <h1 className="md:text-3xl w-45 sm:w-65 md:w-full text-[16px] sm:text-[18px]  font-bold">
               Bangladesh National Organization
             </h1>
 
-            <p className="text-gray-600 w-45 text-[12px]">
+            <p className="text-gray-600 w-45 sm:w-65 text-[12px] sm:text-[14px]  ">
               Service for People, Commitment to Excellence
             </p>
 
@@ -37,17 +37,17 @@ export default function HeaderRes() {
 
         </div>
 
-        <div className="flex items-center gap-3 xl:gap-10">
+        <div className="flex items-center  gap-3 xl:gap-10">
 
           <div className="flex items-center sm:gap-3">
 
-            <div className="bg-gray-200 md:p-4 p-2 rounded-full">
-              <FaPhoneAlt className="text-[12px]"/>
+            <div className="bg-gray-200  md:p-4 p-2 sm:p-3 rounded-full">
+              <FaPhoneAlt className="text-[12px] sm:text-[15px]"/>
             </div>
 
-            <div>
-              <p className="text-gray-500 text-[12px]">Call Us</p>
-              <h3 className="font-bold text-[12px]">
+            <div className="md:w-32">
+              <p className="text-gray-500 text-[12px] sm:text-[15px]">Call Us</p>
+              <h3 className="font-bold text-[12px] sm:text-[15px]">
                 +880 1234-567890
               </h3>
             </div>
@@ -57,9 +57,9 @@ export default function HeaderRes() {
          <div className=" lg:hidden">
             {
                 show ? 
-                <button onClick={heandleshowSearch} className=" border px-2 py-2 rounded-full border-gray-100 text-xl bg-gray-200 cursor-pointer"><IoClose /></button>
+                <button onClick={heandleshowSearch} className=" border px-2 py-2 rounded-full border-gray-100 sm:text-[15px] text-xl bg-gray-200 cursor-pointer sm:px-3"><IoClose /></button>
                 : 
-                <button onClick={heandleshowSearch} className=" border px-2 py-2 rounded-full border-gray-100 bg-gray-200 cursor-pointer"><FaSearch /></button>
+                <button onClick={heandleshowSearch} className=" border px-2 py-2 rounded-full sm:px-3 sm:py-3 sm:text-[15px] border-gray-100 bg-gray-200 cursor-pointer"><FaSearch /></button>
             }
                
 
