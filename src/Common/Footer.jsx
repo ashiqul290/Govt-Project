@@ -11,7 +11,7 @@ import Container from "./Container";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#052c5b] text-white">
+    <footer className="bg-[#052c5b] px-2 xl:px-0 text-white">
 
       {/* Top */}
     <Container>

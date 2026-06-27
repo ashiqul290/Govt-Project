@@ -3,13 +3,13 @@ import React from 'react'
 const BoxCard = ({item}) => {
   return (
     <>
-      <div className="bg-white rounded-2xl shadow-sm border border-gray-200 p-6">
-  <div className="flex items-center gap-4 mb-6">
+      <div className="bg-white rounded-2xl mx-auto max-w-[85%] sm:max-w-full shadow-sm border border-gray-200 p-6">
+  <div className="xl:flex items-center gap-4 mb-6">
     <div className="w-14 h-14 rounded-full border border-gray-200 flex items-center justify-center text-white text-xl">
      <img src={item.img} alt="" />
     </div>
 
-    <h2 className="text-3xl font-bold">
+    <h2 className="  text-xl sm:text-3xl font-bold">
      {item.title}
     </h2>
   </div>

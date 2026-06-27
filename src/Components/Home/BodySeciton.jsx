@@ -201,11 +201,11 @@ const BodySeciton = () => {
 
       <Container>
 
-        <div className=" flex justify-between my-15">
-          <div className="w-[70%] ">
+        <div className=" flex justify-between my-5 md:my-15">
+          <div className="sm:max-w-[70%] max-w-[65%] ">
             <NoticeBoard />
             <div className=" mt-8">
-              <div className=" grid grid-cols-2 gap-6">
+              <div className=" grid sm:grid-cols-2 gap-6">
                 {visibleServices.map((item, index) => (
                   <BoxCard key={index} item={item} />
                 ))}
@@ -215,7 +215,7 @@ const BodySeciton = () => {
                 {!showAll && (
                   <button
                     onClick={() => setShowAll(true)}
-                    className="  border flex items-center gap-2 px-5 py-2 bg-green-700 font-bold text-lg rounded-[10px] cursor-pointer hover:bg-green-600 text-white"
+                    className="  border flex items-center gap-2 sm:px-5 px-2 py-1 sm:py-2 bg-green-700 font-bold sm:text-lg rounded-[10px] cursor-pointer hover:bg-green-600 text-white"
                   >
                     View all services
                     <IoIosArrowDown />
@@ -225,7 +225,7 @@ const BodySeciton = () => {
                 {showAll && (
                   <button
                     onClick={() => setShowAll(false)}
-                    className=" border flex items-center gap-2 px-5 py-2 bg-green-700 font-bold text-lg rounded-[10px] cursor-pointer hover:bg-green-600 text-white"
+                    className=" border flex items-center gap-2 sm:px-5 px-2 py-1 sm:py-2 bg-green-700 font-bold sm:text-lg rounded-[10px] cursor-pointer hover:bg-green-600 text-white"
                   >
                     Show Less
                     <IoIosArrowUp />
@@ -254,7 +254,7 @@ const BodySeciton = () => {
 
 
           </div>
-          <div className="w-[28%]">
+          <div className=" sm:max-w-[28%] max-w-[33%]">
 
             <div className=" grid gap-6">
 
@@ -271,7 +271,7 @@ const BodySeciton = () => {
               <div className="bg-white border border-gray-200 rounded-lg p-4">
 
                 {/* Header */}
-                <div className="bg-green-700  rounded  text-white font-semibold sm:text-xl text-sm sm:px-4 px-2 py-3">
+                <div className="bg-green-700  rounded  text-white font-semibold sm:text-xl text-[12px] sm:px-4 px-2 py-3">
                   Internal e-services
                 </div>
 
@@ -279,18 +279,18 @@ const BodySeciton = () => {
                 <div className="mt-4 space-y-3">
 
                   <a className="flex justify-between items-center border border-gray-300 rounded sm:text-xl text-sm sm:px-4 px-2 py-3 hover:bg-gray-50">
-                    <span>D document</span>
-                    <span><FaArrowRightLong className='text-gray-500'/></span>
+                    <span className='text-[10px] sm:text-xl'>D document</span>
+                    <span><FaArrowRightLong className='text-gray-500 sm:text-[16px] '/></span>
                   </a>
 
                   <a className="flex justify-between items-center border border-gray-300 rounded sm:text-xl text-sm sm:px-4 px-2 py-3 hover:bg-gray-50">
-                    <span>Case Management and Monitoring System</span>
-                    <span><FaArrowRightLong className='text-gray-500'/></span>
+                    <span className='text-[10px] sm:text-xl'>Case Management and Monitoring System</span>
+                    <span><FaArrowRightLong className='text-gray-500 text-[10px] sm:text-[16px]'/></span>
                   </a>
 
                   <a className="flex justify-between items-center border border-gray-300 rounded sm:text-xl text-sm sm:px-4 px-2 py-3 hover:bg-gray-50">
-                    <span>E-GP</span>
-                    <span><FaArrowRightLong className='text-gray-500'/></span>
+                    <span className='text-[10px] sm:text-xl'>E-GP</span>
+                    <span><FaArrowRightLong className='text-gray-500 text-[10px] sm:text-[16px]'/></span>
                   </a>
 
                 </div>
@@ -305,7 +305,7 @@ const BodySeciton = () => {
 
               <div className="bg-white border border-gray-200 mt-5 rounded-lg p-4">
 
-                <div className="bg-green-700 text-white font-semibold  rounded sm:text-xl text-sm sm:px-4 px-2 py-3">
+                <div className="bg-green-700 text-white font-semibold  rounded sm:text-xl text-[12px]  sm:px-4 px-2 py-3">
                   Important links
                 </div>
 
@@ -314,10 +314,10 @@ const BodySeciton = () => {
                   {links.map((item, index) => (
                     <div
                       key={index}
-                      className="flex gap-2 items-center border-gray-300 sm:text-xl text-sm sm:px-4 px-2 py-3 border-b last:border-b-0"
+                      className="flex gap-2 items-center border-gray-300  sm:px-4 px-2 py-3 border-b last:border-b-0"
                     >
                       <span className="text-green-600 text-xl"><IoIosCheckmarkCircle /></span>
-                      <span>{item}</span>
+                      <span className='text-[10px] sm:text-xl'>{item}</span>
                     </div>
                   ))}
 
@@ -330,7 +330,7 @@ const BodySeciton = () => {
               </div>
               <div className="bg-white border border-gray-200 rounded-lg sm:text-xl text-sm sm:px-4 px-2 py-3">
 
-                <div className="bg-green-700 text-white font-semibold text-xl rounded sm:text-xl text-sm sm:px-4 px-2 py-3">
+                <div className="bg-green-700 text-white font-semibold  rounded sm:text-xl text-sm sm:px-4 px-2 py-3">
                   Emergency contact
                 </div>
 
@@ -338,21 +338,21 @@ const BodySeciton = () => {
 
                   <div className="bg-gray-50 sm:text-xl text-sm sm:px-4 px-2 py-3 rounded flex justify-between">
                     <p>Government information and services</p>
-                    <span className="text-red-600 text-4xl font-bold">
+                    <span className="text-red-600 md:text-4xl text-xl font-bold">
                       333
                     </span>
                   </div>
 
                   <div className="bg-gray-50 sm:text-xl text-sm sm:px-4 px-2 py-3 rounded flex justify-between">
                     <p>Emergency services</p>
-                    <span className="text-red-600 text-4xl font-bold">
+                    <span className="text-red-600 md:text-4xl text-xl font-bold">
                       999
                     </span>
                   </div>
 
                   <div className="bg-gray-50 sm:text-xl text-sm sm:px-4 px-2 py-3 rounded flex justify-between">
                     <p>Fire Service Hotline</p>
-                    <span className="text-red-600 text-4xl font-bold">
+                    <span className="text-red-600 md:text-4xl text-xl  font-bold">
                       102
                     </span>
                   </div>
