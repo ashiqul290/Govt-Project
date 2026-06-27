@@ -4,7 +4,7 @@ import govtImg from '../../assets/HeaderIMG/hero.png'
 
 export default function Header() {
   return (
-    <div className="bg-white shadow">
+    <div className="bg-white hidden xl:block shadow">
         <Container>
       <div className=" px-4 py-5 flex justify-between items-center">
 

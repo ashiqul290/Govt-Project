@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+
+
+@theme {
+  --breakpoint-xs: 320px;
+  --breakpoint-2xl: 475px;
+}
+
+
 .bgMain{
   padding: 0 28px;
   background-image: url(assets/bg_main_july.gif);

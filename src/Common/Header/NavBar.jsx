@@ -65,7 +65,7 @@ const menus = [
 
 export default function Navbar() {
   return (
-    <nav className="bg-[#052c5b] text-white">
+    <nav className="bg-[#052c5b] hidden lg:block text-white">
       <Container>
 
         <div className=" flex">

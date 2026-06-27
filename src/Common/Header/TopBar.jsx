@@ -3,7 +3,7 @@ import Container from "../Container";
 
 export default function TopBar() {
   return (
-    <div className="bg-green-700 text-white">
+    <div className="bg-green-700 hidden md:block text-white">
         <Container>
       <div className=" py-2 flex justify-between items-center text-sm">
 
