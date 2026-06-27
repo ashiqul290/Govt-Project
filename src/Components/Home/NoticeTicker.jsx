@@ -37,9 +37,9 @@ export default function NoticeTicker() {
     <div className="bg-white rounded-lg mt-4 overflow-hidden">
       <div className="flex items-center">
         {/* Left Label */}
-        <div className="bg-red-600 text-white px-5 py-3 flex items-center gap-2 font-semibold shrink-0">
+        <div className="bg-red-600 text-white px-2 py-2 sm:px-5 sm:py-3 flex items-center gap-2 font-semibold shrink-0">
           <FaBell className="animate-pulse" />
-          <span>সর্বশেষ খবর</span>
+          <span>Latest News</span>
         </div>
 
         {/* Right Sliding Notices */}
@@ -49,11 +49,11 @@ export default function NoticeTicker() {
               <Link
                 href={`/notice/${notice.id}`}
                 key={index}
-                className="inline-flex items-center gap-2 mx-8 text-gray-700 hover:text-red-600 transition"
+                className="inline-flex items-center gap-2 sm:mx-8 mx-3 text-gray-700 hover:text-red-600 transition"
               >
                 <span>📢</span>
-                <span>{notice.title}</span>
-                <span className="text-red-500 text-sm">
+                <span className="text-[14px] sm:text-[16px]">{notice.title}</span>
+                <span className="text-red-500 text-[10px] sm:text-sm">
                   ({notice.date})
                 </span>
               </Link>

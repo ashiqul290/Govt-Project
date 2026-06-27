@@ -25,7 +25,7 @@ export default function HeaderRes() {
 
           <div>
 
-            <h1 className="md:text-3xl w-45 sm:w-65 md:w-full text-[16px] sm:text-[18px]  font-bold">
+            <h1 className="md:text-3xl w-45 2xl:w-65 sm:w-85 md:w-full text-[16px] sm:text-[18px]  font-bold">
               Bangladesh National Organization
             </h1>
 

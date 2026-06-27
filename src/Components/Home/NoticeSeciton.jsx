@@ -86,7 +86,7 @@ const NoticeSeciton = () => {
     <div className=" flex items-center justify-between border px-8  py-8 rounded-2xl bg-red-50 border-red-100">
      <div className="  flex gap-2 items-start">
        <h3 className=' text-red-500 font-bold'>News</h3>
-      <p className=' w-160'>All depot activities will be closed on July 1, 2026, for the purpose of annual stock verification of the depot.</p>
+      <p className=' max-w-160'>All depot activities will be closed on July 1, 2026, for the purpose of annual stock verification of the depot.</p>
      </div>
       <button className=' border px-5 py-1 bg-green-700 rounded-[5px] cursor-pointer font-bold text-white'>All</button>
     </div>
